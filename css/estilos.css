@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ p{
+   color: #1D5484;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 88%;
+}
+ 
+body{
+   font-family:'open sans';
+   background: white;
+   position: relative;
+   width: 1440px;
+   height: 2400px;
+   left: 0px;
+   top: 0px;
+}
+
+ /*---Barra inicio Azul ---------------*/
+
+.barra-inicio{
+   background: #1D5484;  
+   position: absolute;
+   width: 100%;
+   height: 56px;
+   left: 0px;
+   top: 0px;
+}
+
+.barra-inicio a{
+   color: #ffffff;
+   text-decoration: none;  /*---retiro el subrayado */
+   padding: 17px 80px;
+}
+ 
+.barra-inicio a:hover {     
+   text-decoration: underline;
+}
+
+.fono-mail{ 
+   display: flex;
+   justify-content: space-between;
+}
+
+.redes-soc{ 
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+  /*---Barra secundaria Blanca -----------*/
+
+.barra-menu{  
+   display: flex;
+   background-color: #ffffff;
+   position: absolute;
+   width: 100%;
+   height: 66px;
+   left: 0px;
+   top: 56px;
+}
+
+.barra-menu .logo{
+   display: flex;
+   box-sizing: border-box;
+   position: absolute;
+   left: 5.56%;
+   right: 90.9%;
+   top: 19.05%;
+   bottom: 20.24%;
+}
+
+.barra-menu .text-logo h5{
+   font-style: normal;
+   font-size: 18px;
+
+   /* identical to
+    box height, or 133% */
+   
+   letter-spacing: 0,01em;
+   text-transform: capitalize;
+   
+   color: #1D5484;
+   text-align: left;
+   padding-left: 130px;
+   padding-top: 24px;
+}   
+
+.menu-inicial{
+   display: flex;
+   color: #1D5484;
+   flex-direction: row;
+   align-items: center;
+   padding: 0px;
+   gap: 40px;
+
+   position: absolute;
+   width: 508px;
+   height: 48px;
+   left: 877px;
+   top: 10px;
+}
+
+nav .menu-inicial a{
+   color:  #1D5484;
+   font-weight: 300;
+   text-decoration: none;
+}
+
+nav .menu-inicial a:hover {     
+   text-decoration: underline;
+}
+
+button{
+   font-style: 1.25cm;
+   font-weight: bols;
+   padding: 10px 30px;
+   border-radius: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   color: white;
+   background-color: #1D5484;
+   margin:center;
+}
+
+button:hover{
+   background-color: rgba(31, 86, 135, 0.807);
+}
+
+
+ /* ---Main -- Aviso publicitario ----------- */
+
+#img-travel{ 
+   width: 100%;
+   height: 170vh;
+   background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.011),
+    rgba(0, 0, 0, 0)
+  )  
+   ,url("https://media.istockphoto.com/id/870136986/es/foto/hombre-joven-remando-la-canoa-roja-en-lago-de-braies-italia.jpg?s=612x612&w=0&k=20&c=1-FZh8g7jcYh8-xDL2Q2a49VXdowG7Y4Hwux8G5-ug0=");
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+.texto{
+   color: white;
+   width: 1010px;
+   height: 176px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 3.5rem;
+   font-weight: bold;
+   align-items: left;
+   justify-content:space-between;
+   text-align: left;
+}
+
+.texto h1{
+   position: absolute;
+   left: 80px;
+   top: 8%;
+ }
+
+.texto h2{
+   position: absolute;
+   left: 80px;
+   top: 11%;
+ }
+
+.vector-transp{
+   position: absolute;
+   width: 600px;
+   height: 300px;
+   left: 840px;
+   top: 300px;
+}
+
+.vector-travel{
+   position: absolute;
+   left: 9%;
+   top: 17%;
+}
+
+
+ /* ---Noticias Internacionales ---------- */
+
+.internacional{
+   background-color: white;
+   position: absolute;
+   width: 100%;
+   height: 640px;
+   left: 0px;
+   top: 774px;
+}
+
+.titulo p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   width: 250px;
+   height: 100px;
+   left: 80px;
+   top: 30px;
+}
+
+#linea-div1{
+   position: absolute;
+   width: 1280px;
+   height: 11px;
+   background: #1D5484;
+   left: 80px;
+   top: 70px;
+}
+
+.subtitulo p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   width: 250px;
+   height: 100px;
+   left: 0px;
+   top: 30px;
+}
+
+.imagen-int{
+   display: flex;
+   position: absolute;
+   width: 593px;
+   height: 456px;
+   left: 80px;
+   top: 200px;
+}
+
+.texto-int{
+   position: absolute;
+   width: 593px;
+   height: 456px;
+   left: 727px;
+   top: 190px;
+
+   color: #1D5484;
+   font-family: 'Open Sans';
+   font-style: normal;
+}
+
+h3{
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 180%;
+   position: absolute;
+   position: absolute;
+   width: 630px;
+   height: 552px;
+   left: 0px;
+   top: 0px;
+}
+
+h4{
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 180%;
+   position: absolute;
+   width: 630px;
+   height: 552px;
+   left: 0px;
+   top: 110px;
+}
+
+ /* ---Noticias de Ecologia ---------- */
+
+.ecologia{
+   background-color: white;
+   position: absolute;
+   width: 100%;
+   height: 690px;
+   left: 0px;
+   top: 1410px;
+}
+
+.titulo2 p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   width: 250px;
+   height: 100px;
+   left: 80px;
+   top: 30px;
+}
+
+#linea-div2{
+   position: absolute;
+   width: 1280px;
+   height: 11px;
+   background: #1D5484;
+   left: 80px;
+   top: 70px;
+}
+
+.subtitulo2 p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   width: 250px;
+   height: 100px;
+   left: 0px;
+   top: 30px;
+}
+
+
+.linea-div2{
+   left: 80px;
+   top: 70px;
+}
+.imagen-eco{
+   display: flex;
+   position: absolute;
+   width: 593px;
+   height: 68%;
+   left: 80px;
+   top: 200px;
+   overflow: hidden;  /* esconde lo q esta fuera del contenedor */
+}
+
+.texto-eco{
+   position: absolute;
+   width: 593px;
+   height: 456px;
+   left: 727px;
+   top: 190px;
+
+   color: #1D5484;
+   font-family: 'Open Sans';
+   font-style: normal;
+}
+
+h3{
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 180%;
+   position: absolute;
+   position: absolute;
+   width: 630px;
+   height: 552px;
+   left: 0px;
+   top: 0px;
+}
+
+h4{
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 180%;
+   position: absolute;
+   width: 630px;
+   height: 552px;
+   left: 0px;
+   top: 110px;
+}
+
+ /* --- Barra final--------------------- */
+
+h5 {
+   color: #FFFFFF;
+   width: 38px;
+   height: 32px;
+
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 32px;
+   /* identical to box height, or 133% */
+   letter-spacing: 0.01em;
+   text-transform: capitalize;
+/* Inside auto layout */
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   
+}
+
+a{
+   color: #FFFFFF; 
+}
+
+.contenedor0{
+ 
+  background: #1D5484; 
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  left: 0px;
+  top: 2090px;
+ }
+
+
+/* ----logo footer----------------*/
+
+.logo2{
+   display: flex;
+   box-sizing: border-box;
+   position: absolute;
+   left: 5.40%;
+   right: 90.97%;
+   top: 30.34%;
+   bottom: 55.34%;
+}
+
+.texto-logo h5 {
+   padding-left: 135px;
+   padding-top: 115px;
+}
+
+.texto-logo h6 {  /* noticiero Online */
+   color: #FFFFFF;
+   position: absolute;
+   width: 109px;
+   height: 32px;
+   left: 180px;
+   top: 119px;
+   
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 32px;
+   /* identical to box height, or 213% */
+   
+   letter-spacing: 0.01em;
+   text-transform: capitalize;
+}
+
+
+/* ----Contenedor de contactos footer------------ */
+
+.contactos{
+
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 64px;
+   
+   position: absolute;
+   width: 378px;
+   height: 152px;
+   left: 986px;
+   top: 30.34%;
+}
+
+.contenedor1{
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 24px;
+   
+   width: 105px;
+   height: 152px;
+   /* Inside auto layout */
+   
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+}
+
+.contenedor1 .texto-logo h5 {
+
+   padding-left: 0px;
+   padding-top: 0px;
+}
+
+
+.menu-Nol{
+
+   width: 105px;
+   height: 24px;
+   
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 24px;
+   /* identical to box height, or 133% */
+   letter-spacing: 0.01em;
+   color: #FFFFFF;
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+
+}
+
+nav .menu-Nol a{
+
+   color: #FFFFFF;
+   width: 105px;
+   height: 24px;
+   
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 24px;
+   /* identical to box height, or 133% */
+   letter-spacing: 0.01em;
+   text-decoration: none;
+   /* Inside auto layout */
+   
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+
+}
+
+nav .menu-Nol a:hover { 
+
+   text-decoration: underline;
+}
+
+
+.contenedor2{
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 12px;
+   
+   width: 209px;
+   height: 152px;
+   
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+ }
+
+.contenedor2 .texto-logo h5{
+   padding-left: 0px;
+   padding-top: 0px;
+}
+
+.menu-contatos{
+ 
+   color: #FFFFFF; 
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   gap: 12px;
+ 
+   width: 209px;
+   height: 52px;
+
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+}
+
+
+.menu-contatos a{
+   color: #FFFFFF; 
+   text-decoration: none;
+}
+
+.menu-contatos a:hover { 
+   color: #FFFFFF; 
+   text-decoration: underline;
+}
+
+
+ /* --- Footer--------------------- */
+
+
+.contenedor-footer{
+
+   border-top: 3px solid #494fcb; 
+   position: absolute;
+   display: flex;
+   width: 100%;
+   height: 49px;
+   left: 0px;
+   top: 2390px;
+
+}
+
+.texto-footer p{
+   display: flex;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   margin-left: 80px;
+   margin-top: 15px;
+   color:  white;
+}
+
+#fono-m{
+   gap: 2px;
+}
+
+.redes-sociales{ 
+
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   position: absolute;
+   justify-content:space-between;
+   gap: 48px;
+
+   height: 24px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+   margin-left: 1186px;
+   top: 15px;
+}
+
+/*   Boton de retorno---*/
+
+.boton{
+   font-style: 1.25cm;
+   font-weight: bols;
+   padding: 8px 10px;
+   border-radius: 10px;
+   border: 1px solid #324856;
+ 
+   color: white;
+ /* background-color: rgba(214, 182, 244, 0.946);*/
+   background-color:  hsl(203, 40%, 78%);
+   float: right;
+}
+ 
+.boton:hover{
+   background-color:  #8aafc5;
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+ 
+}
+
+
+
+
+
+/*   Display para Movil  --------------------------*/
+
+@media screen and (max-width:900px){
+   p{
+      color: #1D5484;
+      font-style: normal;
+      font-weight: 50%;
+      font-size: 50%;
+      line-height: 88%;
+   }
+    
+   header{
+       background-position: center; 
+   }
+
+   .barra-inicio{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+   .internacional{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+
+ .texto-int{
+      width: 90%;       
+  }
+}
+
+  @media screen and(max-width:500px) {
+   nav{
+       text-align: center;
+       padding: 30px 0 0 0;
+   }
+}
