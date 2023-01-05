@@ -11,15 +11,21 @@
    font-size: 40px;
    line-height: 88%;
 }
- 
+
 body{
+
    font-family:'open sans';
+   width: 1440px;
+   height: 2441px;
+   position: relative;
+
+}
+
+header{
    background: white;
    position: relative;
-   width: 1440px;
-   height: 2400px;
-   left: 0px;
-   top: 0px;
+
+
 }
 
  /*---Barra inicio Azul ---------------*/
@@ -31,12 +37,18 @@ body{
    height: 56px;
    left: 0px;
    top: 0px;
+
 }
 
 .barra-inicio a{
+   display: flex;
+   object-fit: cover;
    color: #ffffff;
    text-decoration: none;  /*---retiro el subrayado */
    padding: 17px 80px;
+   gap: 2px;
+
+
 }
  
 .barra-inicio a:hover {     
@@ -46,6 +58,7 @@ body{
 .fono-mail{ 
    display: flex;
    justify-content: space-between;
+
 }
 
 .redes-soc{ 
@@ -648,41 +661,9 @@ nav .menu-Nol a:hover {
 
 
 
-
 /*   Display para Movil  --------------------------*/
 
 @media screen and (max-width:900px){
-   p{
-      color: #1D5484;
-      font-style: normal;
-      font-weight: 50%;
-      font-size: 50%;
-      line-height: 88%;
-   }
-    
-   header{
-       background-position: center; 
-   }
 
-   .barra-inicio{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-   .internacional{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  } 
 
- .texto-int{
-      width: 90%;       
-  }
-}
-
-  @media screen and(max-width:500px) {
-   nav{
-       text-align: center;
-       padding: 30px 0 0 0;
-   }
 }
