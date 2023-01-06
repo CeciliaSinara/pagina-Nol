@@ -24,8 +24,6 @@ body{
 header{
    background: white;
    position: relative;
-
-
 }
 
  /*---Barra inicio Azul ---------------*/
@@ -660,10 +658,11 @@ nav .menu-Nol a:hover {
 
 
 
-
 /*   Display para Movil  --------------------------*/
 
 @media screen and (max-width:900px){
-
+header{
+   width:  90%;
+}
 
 }

@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family :'Times New Roman', Times, serif;
     background: linear-gradient(150deg, #6c3483, #58d68d );
     height: 100vh;
     }
@@ -14,6 +14,7 @@ body{
        left: 50%;
        transform: translate(-50%, -50%);
        width: 400px;
+       height: 400px;
        background: white;
        border-radius: 10px;
     }
@@ -67,18 +68,6 @@ body{
         transition: .5s;
      }
      
-     .username input:focus ～ label,
-     .username input:focus ～ label{
-        top: -5px;
-        color: #6c3483;
-     }
-     
-     .username input:focus ～ span::before,
-     .username input:focus ～ span::before{
-       width: 100%;
-        color: #6c3483;
-     }
-     
      .recordar{
      margin: -5px0 20px 5px;
      color: blue ;
@@ -104,6 +93,7 @@ body{
      input[type="submit"]:hover{
          border-color: purple;
          transition: .5s;
+         
      }
 
     .registrarse{
@@ -121,3 +111,13 @@ body{
     .registrarse a:hover{
         text-decoration: underline;
     }
+
+    #final{
+      color: blue ;
+      cursor: pointer;
+      text-align: center;
+      }
+
+    #final a{
+      color: blue ;
+      }
