@@ -51,9 +51,9 @@ header{
 
 .redes-soc{ 
    display: flex;
+   width: 600px;
    justify-content: space-between;
    padding-left: 142%;
-
    gap: 30px;
 }
 
@@ -139,9 +139,10 @@ button:hover{
 
  /* ---Main -- Aviso publicitario ----------- */
 
-.imagenn-aviso{
+.imagen-aviso{
    background: #c58a90;
    width: 100%;
+   height: 300px;
    top: 60% ;
 }
 
@@ -159,7 +160,7 @@ button:hover{
        overflow:hidden;  /* esconde lo q esta fuera del contenedor */
 }
 
-.texto{
+.imagen-aviso .texto{
    color: white;
    font-family: 'Times New Roman', Times, serif;
    font-size: 2.5rem;
@@ -167,29 +168,27 @@ button:hover{
    align-items: left;
    justify-content:space-between;
    text-align: left;
-   margin-top: 60%;
 }
 
-.texto h1{
+.imagen-aviso .texto h1{
    width: 50%;
    position: absolute;
    left: 2%;
    top: 30%;
  }
 
-.vector{
-
+ .imagen-aviso .img-vector{
    position: absolute;
-   width: 300px;
-   height: 300px;
+   width: 100%;
+   height: 100%;
    left: 60%;
-   top: 30%;
+   top: 45%;
  }
 
 .vector-travel{
    position: absolute;
-   left: 1.5%;
-   top: 3%;
+   left: 0.3%;
+   top: 1.7%;
 }
 
 
@@ -213,12 +212,16 @@ button:hover{
    top: 30px;
 }
 
-#linea-div1{
+#linea-div{
    position: absolute;
    width: 95%;
-   height: 11px;
+   height: 8px;
    background: #1D5484;
    left: 2%;
+   gap: 2;
+}
+
+.linea1{
    top: 70px;
 }
 
@@ -227,9 +230,8 @@ button:hover{
    justify-content:space-between;
    text-align: left;
    width: 30%;
-
    left: 0px;
-   top: 30px;
+   top: 28px;
 }
 
 .imagen-int{
@@ -253,7 +255,6 @@ button:hover{
    font-weight: 100%;
    font-size: 18px;
    line-height: 150%;
-
 }
 
 h3{
@@ -275,8 +276,6 @@ h4{
    height: 500px;
    left: 0px;
    top: 212%;
-
-
 }
 
 .titulo2 p{
@@ -289,14 +288,6 @@ h4{
    top: 30px;
 }
 
-#linea-div2{
-   position: absolute;
-   width: 95%;
-   height: 11px;
-   background: #1D5484;
-   left: 2%;
-   top: 70px;
-}
 
 .subtitulo2 p{
    position: absolute;
@@ -310,10 +301,11 @@ h4{
 }
 
 
-.linea-div2{
+.linea2{
    left: 80px;
    top: 70px;
 }
+
 .imagen-eco{
    display: flex;
    position: absolute;
@@ -343,6 +335,7 @@ h4{
  /* --- Barra azul final--------------------- */
 a{
    color: #FFFFFF; 
+   text-decoration: none;
 }
 
 h5 {
@@ -368,7 +361,7 @@ h5 {
   background: #1D5484; 
   position: absolute;
   width: 100%;
-  height: 350px;
+  height: 320px;
   left: 0px;
   top: 310%;
  }
@@ -377,11 +370,10 @@ h5 {
 
    position: absolute;
    width: 50%;
-   height: 350px;
+   height: 270px;
    left: 0px;
-   top: 0px;
-  }
-/* ----logo----------------*/
+   top: 0%;
+}
 
 .logo2{
    display: flex;
@@ -391,22 +383,24 @@ h5 {
    right: 90.97%;
    top: 30.34%;
    bottom: 55.34%;
+}
 
+.texto-logotipo{  
+
+   position: absolute;
+   width: 50%;
+   height: 60px;
+   top: 20%;
+   left: 12%;
+   color: white;
 }
 
 .texto-logo h5 {
-   padding-left: 15%;
-   padding-top: 21.5%;
+   padding-left: 0px;
+   padding-top: 13%;
 }
 
-.texto-logo h6 {  /* noticiero Online */
-   color: #FFFFFF;
-   position: absolute;
-   width: 109px;
-   height: 32px;
-   left: 24%;
-   top: 33.6%;
-   
+.texto-logo h6 {  /* noticiero Online */ 
    font-style: normal;
    font-weight: 400;
    font-size: 15px;
@@ -414,24 +408,28 @@ h5 {
 
    letter-spacing: 0.01em;
    text-transform: capitalize;
+
+   padding-left: 18%;
+   padding-top: 1%;
+
 }
 
 
 /* ----Contenedor de contactos footer------------ */
 
-.contactos{
 
+.contactos{
+   position: absolute;
    display: flex;
    flex-direction: row;
    align-items: flex-start;
    padding: 0px;
-   gap: 64px;
-   
-   position: absolute;
+
    width: 70%;
    height: 152px;
-   left: 59%;
-   top: 30.34%;
+   left: 63%;
+   top: 20%;
+   gap: 60px;
 }
 
 .contenedor1{
@@ -502,7 +500,6 @@ nav .menu-Nol a:hover {
    text-decoration: underline;
 }
 
-
 .contenedor2{
 
    display: flex;
@@ -523,10 +520,6 @@ nav .menu-Nol a:hover {
 .contenedor2 .texto-logo h5{
    padding-left: 0px;
    padding-top: 0px;
-}
-
-#fono-m{
-   gap: 2px;
 }
 
 .menu-contatos{
@@ -551,7 +544,7 @@ nav .menu-Nol a:hover {
    text-decoration: none;
 }
 
-.menu-contatos a:hover { 
+.menu-contatos a:hover{ 
    color: #FFFFFF; 
    text-decoration: underline;
 }
@@ -567,7 +560,7 @@ nav .menu-Nol a:hover {
    width: 100%;
    height: 49px;
    left: 0px;
-   top: 370%;
+   top: 364%;
 }
 
 .texto-footer p{
@@ -584,13 +577,13 @@ nav .menu-Nol a:hover {
 }
 
 .redes-sociales{ 
-   width: 300px;
+   width: 200px;
    display: flex;
    flex-direction: row;
    align-items: flex-start;
    position: absolute;
    justify-content:space-between;
-   gap: 48px;
+   gap: 40px;
 
    height: 24px;
 
@@ -598,17 +591,17 @@ nav .menu-Nol a:hover {
    flex: none;
    order: 1;
    flex-grow: 0;
-   margin-left: 66%;
+   margin-left: 78.5%;
    top: 15px;
 }
 
 /*   Boton de retorno------------------*/
 
-.boton{
+.boton-retornar{
    font-style: 1.25cm;
    font-weight:bolder;
 
-   border-radius: 8px;
+   border-radius: 10px;
    border: 1px solid #93a3ad;
  
    color: white;
@@ -617,7 +610,7 @@ nav .menu-Nol a:hover {
    float: right;
 }
  
-.boton:hover{
+.boton-retornar:hover{
    background-color:  #8aafc5;
    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
  
@@ -628,5 +621,343 @@ nav .menu-Nol a:hover {
 /*   Display para Movil  --------------------------*/
 
 @media screen and (max-width:900px){
+
+   .boton-retornar{
+      display: none;
+     }
+
+   .redes-soc{ 
+      padding-left: 100%;
+      gap: 10px;
+   }
+   
+  /*  .contenedor-logo-contactos{
+      top: 340%;
+     } */
+
+
+
+   .menu{
+      left: 56.5%;
+      gap: 15px;
+   }
+
+   .texto-logotipo{  
+      left: 14%;
+   }
+   
+   .texto-logo h6 {
+      padding-left: 19%;
+      padding-top: 1%;
+   
+   }
+
+   .contactos{
+      left: 56.5%;
+   }
+   
+   .redes-sociales{ 
+      margin-left: 75%;
+      gap: 5px;
+   }
+   
+}
+
+@media screen and (max-width:800px){
+
+   .redes-soc{ 
+      width: 500px;
+      padding-left: 70%;
+      gap: 6px;
+   }
+   
+   .menu{
+      left: 51%;
+      gap: 15px;
+   }   
+
+   p{
+      color: #1D5484;
+      font-style: normal;
+      font-weight: 50%;
+      font-size: 30px;
+      line-height: 88%;
+   }
+
+   #linea-div{
+      height: 3px;
+   }
+
+   .subtitulo p{
+      top: 24px;
+   }
+
+   .imagen-int{
+      width: 50%;
+      height: 48%;
+      top: 35%;
+   }
+   
+   .texto-int{
+      width: 47%;
+      height: 45%;
+      left: 47%;
+      top: 35%;
+
+      font-weight: 50%;
+      font-size: 18px;
+      line-height: 120%;
+   }
+   
+   .texto-logo h5 {
+      padding-top: 15%;
+   }
+
+   .texto-logo h6 {
+      padding-left: 22%;
+   }
+
+   .contactos{
+      left: 50.5%;
+   }
+
+   .redes-sociales{ 
+      margin-left: 72%;
+      gap: 5px;
+   }
+
+}
+
+@media screen and (max-width:700px){
+
+
+   .redes-soc{ 
+      width:100%;
+      padding-left: 40%;
+      gap: 6px;
+   }
+   
+   .menu{
+      left: 50%;
+      gap: 15px;
+   }   
+
+   button{
+      font-style: 1.18cm;
+      padding: 10px 15px;
+   }
+
+   .imagen-aviso .texto{
+      font-size: 1.6rem;
+   }
+
+   .imagen-aviso .img-vector{
+      width: 200%;
+      left: 56%;
+      top: 35%;
+    }
+
+   .imagen-int{
+      width: 40%;
+      height: 48%;
+      top: 35%;
+   }
+   
+   .texto-int{
+      width: 45%;
+      height: 40%;
+      left: 50%;
+      top: 35%;
+
+      font-weight: 100%;
+      font-size: 16px;
+      line-height: 110%;
+   }
+
+   .texto-eco{
+      width: 45%;
+      height: 40%;
+      left: 50%;
+      top: 40%;
+
+      font-size: 16px;
+      line-height: 150%;
+
+   }
+
+   .texto-logo{
+      left: 15%;
+   }
+
+   .texto-logo h5 {
+      padding-top: 19.5%;
+   }
+
+   .texto-logo h6 {
+      padding-left: 25%;
+      padding-top: 1.5%;
+   }
+
+   .contactos{
+      left: 48%;
+      gap: 40px;
+   }
+
+   .redes-sociales{ 
+      margin-left: 69%;
+      gap: 1px;
+   }
+
+}
+
+@media screen and (max-width:600px){
  
+.barra-inicio{
+   height: 40px;
+}
+
+.barra-inicio a{
+   padding: 3% 6%;
+}
+
+   .redes-soc{ 
+      display: none;
+   }
+
+   .barra-menu{  
+      height: 50px;
+      left: 0px;
+      top: 40px;
+   }   
+
+   .barra-menu .text-logo h5{
+      padding-left: 160%;
+      padding-top: 30%;
+   }  
+   
+   .fono-mail{ 
+      width: 600px;
+   }
+
+
+   .menu{
+      left: 63%;
+      top: 3px;
+      gap: 15px;
+   }   
+
+   button{
+      display: none;
+   }
+
+   .imagen-aviso .img-vector{
+      display: none;
+    }
+
+    .imagen-int{
+      width: 42%;
+      height: 42%;
+      top: 35%;
+   }
+
+
+   .contenedor-logo-contactos{
+      width: 100%;
+      height: 320px;
+      left: 0px;
+      top: 310%;
+     }
+    
+     .logotipo{  
+       position: absolute;
+       text-align: center;
+       width: 270px;
+       height: 270px;
+       left: 25%;
+       top: 0%;
+    }
+    
+    .logo2{
+       display: flex;
+       box-sizing: border-box;
+       position: absolute;
+       left: 3%;
+       right: 90.97%;
+       top: 10%;
+       bottom: 75%;
+    }
+    
+    .texto-logotipo{  
+       width: 178px;
+       height: 100px;
+       top: 0%;
+       left: 12%;
+       color: white;
+    }
+    
+    .texto-logo h5 {
+      padding-left: 10%;
+      padding-top: 19%;
+   }
+    
+   .texto-logo .texto-logotipo h6 {
+      padding-top: 0%;
+   }
+
+   .contactos{
+      left: 20%;
+      top: 30% ;
+      gap: 60px;
+   }
+
+   .contenedor-footer{
+      left: 0px;
+      top: 360%;
+   }
+
+   .texto-footer p{
+      text-align: center;
+      display: inline-block;
+      margin-left: 15%;
+      margin-top: 3%;
+   }
+   
+   .redes-sociales{ 
+      margin-left: 30%;
+      margin-top: 5%;
+   }
+}
+
+@media screen and (max-width:500px){
+
+   .fono-mail{ 
+      width: 500px;
+   }
+
+   .barra-menu .text-logo h5{
+      padding-left: 113%;
+   }   
+
+   .menu{
+      left: 54%;
+      top: 3px;
+   }   
+
+   .imagen-int{
+      width: 30%;
+      height: 32%;
+      top: 35%;
+   }
+
+   .texto-eco{
+      width: 45%;
+      height: 40%;
+      left: 50%;
+      top: 40%;
+
+      font-size: 14px;
+      line-height: 150%;
+   }
+
+
 }
