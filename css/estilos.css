@@ -49,6 +49,7 @@ header{
    left: 2%;
 }
 
+
 .redes-soc{ 
    display: flex;
    width: 600px;
@@ -57,7 +58,11 @@ header{
    gap: 30px;
 }
 
-
+.barra-chica{
+    display: none; 
+ }
+ 
+ 
   /*---Barra secundaria Blanca -----------*/
 
 .barra-menu{  
@@ -810,7 +815,7 @@ nav .menu-Nol a:hover {
 
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px){   /*-------600-*/
  
 .barra-inicio{
    height: 40px;
@@ -820,9 +825,41 @@ nav .menu-Nol a:hover {
    padding: 3% 6%;
 }
 
-   .redes-soc{ 
-      display: none;
-   }
+.barra-chica{
+      display: flex;
+      background: #1D5484;  
+      position: absolute;
+      width: 90%;
+      height: 56px;
+      left: 0px;
+      top: 0px;
+}
+
+.redes-soc{ 
+  display: none;
+}
+
+.boton-reg{
+   position: relative;
+   font-style: 1.25cm;
+   font-weight: bols;
+   padding: 10px 30px;
+   border-radius: 10px;
+   border: 1px solid rgba(0,0,0,0.5);
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   color: white;
+   background-color: #487de1;
+   margin:center;
+
+   width: 30%;
+   height: 4px;
+   left: 40%;
+   top: 1.5px;
+}
+
+.boton-reg:hover{
+   background-color: rgba(86, 76, 197, 0.641);
+}
 
    .barra-menu{  
       height: 50px;
@@ -834,10 +871,7 @@ nav .menu-Nol a:hover {
       padding-left: 160%;
       padding-top: 30%;
    }  
-   
-   .fono-mail{ 
-      width: 600px;
-   }
+
 
 
    .menu{
@@ -930,8 +964,10 @@ nav .menu-Nol a:hover {
 
 @media screen and (max-width:500px){
 
-   .fono-mail{ 
-      width: 500px;
+   .boton-reg{
+      width: 33%;
+      height: 60%;
+      top: 4px;
    }
 
    .barra-menu .text-logo h5{
