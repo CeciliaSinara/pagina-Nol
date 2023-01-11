@@ -37,6 +37,15 @@ header{
    height: 33px;
 }
 
+#logo-movil img{     /* ...Imagen logo movil...*/
+   position: absolute;
+   display: flex;
+   box-sizing: border-box;
+   left: 2%;
+   width: 0.1%;
+   top: 1%;
+}
+
 .barra-inicio .fono { 
  
    display: flex;
@@ -69,10 +78,12 @@ header{
 
    text-decoration: underline;
 }
+  /*-
+#logo-movil{
 
-.logo-movil{
    display: none;
 }
+*/
 
   /*---Barra secundaria Blanca -----------*/
 
@@ -175,7 +186,7 @@ button:hover{
 .imagen-aviso #img-travel img{ 
 
    width: 211vh;
-   height: 92vh;
+   height: 83vh;
 }
 
 .imagen-aviso .texto{
@@ -878,26 +889,29 @@ text-align: center;
    display: none;
 }
 
-.logo-movil img{     /* ...Imagen logo movil...*/
+
+#logo-movil img{    
+
    position: absolute;
    display: flex;
-
    box-sizing: border-box;
    left: 2%;
    width: 5%;
-   top: 1%;
-}
+   top: 1.5%;
+}  
 
-.text-movil{
+#text-movil{
    position: absolute;
    display: flex;
+   justify-content: space-between;
+   align-items: center;
    color: #ffffff;
    width: 200px;
    padding-left: 8%;
    top: 0%;
 } 
 
-.text-movil h5{
+#text-movil h5{
    font-style: normal;
    font-size: 16px;
    letter-spacing: 0,01em;
@@ -907,8 +921,8 @@ text-align: center;
    padding-top: 1%;
 } 
 
-.text-movil h6{
-   padding-left: 22%;
+#text-movil h6{
+   padding-left: 18%;
    padding-top: 9%;
 }
 
@@ -965,9 +979,9 @@ text-align: center;
 
    .contenedor-logo-contactos{
       width: 100%;
-      height: 320px;
+      height: 310px;
       left: 0px;
-      top: 268%;
+      top: 325%;
      }
 
 /*----------------nueva-barra movil--------*/
@@ -977,8 +991,8 @@ text-align: center;
        text-align: center;
        width: 300px;
        height: 270px;
-       left: 35%;
-       top: 0%;
+       left: 2%;
+       top: 4%;
     }
 
     .logo2{
@@ -1000,6 +1014,7 @@ text-align: center;
    }
 
    h5 {
+
       padding-left: 0%;
       padding-top: 6%;
    }
@@ -1011,26 +1026,35 @@ text-align: center;
 
 /*-------------------------*/
    .contactos{
-      left: 22%;
-      top: 20% ;
+      left: 2%;
+      top: 30% ;
       gap: 60px;
    }
 
    .contenedor-footer{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: space-between;
+
+
+   color: #ffffff;
       left: 0px;
-      top: 305%;
+      top: 383%;
    }
 
+   
    .texto-footer p{
-      text-align: center;
-      display: inline-block;
-      margin-left: 25.5%;
-      margin-top: 3%;
+      display: flex;
+      margin-left: 2%;
    }
    
    .redes-sociales{ 
-      margin-left: 35%;
-      margin-top: 5%;
+      max-width: 10px;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-left: 75%;
    }
 }
 
@@ -1056,27 +1080,4 @@ text-align: center;
       top: 208%;
    }
 
-   .contenedor-logo-contactos{
-      width: 100%;
-      height: 300px;
-      left: 0px;
-      top: 328%;
-     }
-
-     .contenedor-footer{
-      left: 0px;
-      top: 376%;
-   }
-
-   .texto-footer p{
-      text-align: center;
-      display: inline-block;
-      margin-left: 15.5%;
-      margin-top: 3%;
-   }
-   
-   .redes-sociales{ 
-      margin-left: 30%;
-      margin-top: 5%;
-   }
 }
