@@ -7,75 +7,88 @@
  p{
    color: #1D5484;
    font-style: normal;
+   font-size: 28px;
    font-weight: 60%;
    font-size: 40px;
    line-height: 100%;
 }
 
-header{
-   position: relative;
-   font-family:'open sans';
-   max-width: 100%;
+body{
+   font-family:'open sans'; 
 }
 
  /*---Barra inicio Azul ---------------*/
 
-.barra-inicio{
-   background: #1D5484;  
-   position: absolute;
-   width: 100%;
-   height: 56px;
-   left: 0px;
-   top: 0px;
 
+header{
+   background: #1D5484;  
+}
+
+.barra-inicio{
+
+   display: grid;
+   grid-template-columns: 1.3fr 1.3fr 4.2fr;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-left: 2%;
+   margin-right: 2%;
+   color: #ffffff;
+   height: 33px;
+}
+
+.barra-inicio .fono { 
+ 
+   display: flex;
+   gap: 2px;
+}
+
+.barra-inicio .mail { 
+
+   display: flex;
+   gap: 2px;
+}
+
+.barra-inicio .redes-soc{ 
+ 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 70.5%;
+   gap: 20px;
 }
 
 .barra-inicio a{
+
    display: flex;
-   color: #ffffff;
    text-decoration: none;  /*---retiro el subrayado */
-   padding: 5.5% 8%;
    gap: 2px;
 }
  
-.barra-inicio a:hover {     
+.barra-inicio a:hover {    
+
    text-decoration: underline;
 }
 
-.fono-mail{ 
-   width: 300px;
-   display: flex;
-   justify-content: space-between;
-   left: 2%;
+.logo-movil{
+   display: none;
 }
 
-
-.redes-soc{ 
-   display: flex;
-   width: 600px;
-   justify-content: space-between;
-   padding-left: 142%;
-   gap: 30px;
-}
-
-.barra-chica{
-    display: none; 
- }
- 
- 
   /*---Barra secundaria Blanca -----------*/
 
-.barra-menu{  
+  .barra-menu{ 
+
    display: flex;
    background-color: #ffffff;
    position: absolute;
    width: 100%;
    height: 66px;
    left: 0px;
-   top: 56px;
+   top: 33px;
 }
 
 .barra-menu .logo{
+
    display: flex;
    box-sizing: border-box;
    position: absolute;
@@ -86,6 +99,7 @@ header{
 }
 
 .barra-menu .text-logo h5{
+
    font-style: normal;
    font-size: 18px;
 
@@ -102,6 +116,7 @@ header{
 }   
 
 .menu{
+
    display: flex;
    color: #1D5484;
    flex-direction: row;
@@ -112,21 +127,24 @@ header{
    position: absolute;
    width: 100%;
    height: 48px;
-   left: 56%;
+   left: 57%;
    top: 10px;
 }
 
 nav .menu a{
+
    color:  #1D5484;
    font-weight: 300;
    text-decoration: none;
 }
 
 nav .menu a:hover {     
+
    text-decoration: underline;
 }
 
 button{
+
    font-style: 1.25cm;
    font-weight: bols;
    padding: 10px 30px;
@@ -139,33 +157,29 @@ button{
 }
 
 button:hover{
+
    background-color: rgba(31, 86, 135, 0.807);
 }
+
 
  /* ---Main -- Aviso publicitario ----------- */
 
 .imagen-aviso{
-   background: #c58a90;
+
    width: 100%;
    height: 300px;
    top: 60% ;
 }
 
-#img-travel{ 
-   height: 170vh;
-   background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.011),
-    rgba(0, 0, 0, 0)
-  )  
-   ,url("https://media.istockphoto.com/id/870136986/es/foto/hombre-joven-remando-la-canoa-roja-en-lago-de-braies-italia.jpg?s=612x612&w=0&k=20&c=1-FZh8g7jcYh8-xDL2Q2a49VXdowG7Y4Hwux8G5-ug0=");
-       background-repeat: no-repeat;
-      background-size:100%;
 
-       overflow:hidden;  /* esconde lo q esta fuera del contenedor */
+.imagen-aviso #img-travel img{ 
+
+   width: 211vh;
+   height: 92vh;
 }
 
 .imagen-aviso .texto{
+
    color: white;
    font-family: 'Times New Roman', Times, serif;
    font-size: 2.5rem;
@@ -176,42 +190,48 @@ button:hover{
 }
 
 .imagen-aviso .texto h1{
+
    width: 50%;
    position: absolute;
    left: 2%;
    top: 30%;
  }
 
- .imagen-aviso .img-vector{
+ .imagen-aviso  #img-travel .img-vector img{
+
    position: absolute;
-   width: 100%;
-   height: 100%;
+   width: 34%;
+   height: 50%;
    left: 60%;
    top: 45%;
  }
 
-.vector-travel{
+ .imagen-aviso  #img-travel .img-vector .vector-travel  img{
+ 
    position: absolute;
-   left: 0.3%;
-   top: 1.7%;
+   width: 36%;
+   height: 50%;
+   left: 59%;
+   top: 45%;
 }
 
 
  /* ---Noticias Internacionales ---------- */
 
 .internacional{
-   background-color: white;
+
    position: absolute;
    width: 100%;
-   height: 500px;
+   height: 440px;
    left: 0px;
-   top: 115%;
+   top: 102%;
 }
 
 .titulo p{
    position: absolute;
    justify-content:space-between;
    text-align: left;
+   font-size: 28px;
    width: 30%;
    left: 2%;
    top: 30px;
@@ -239,13 +259,13 @@ button:hover{
    top: 28px;
 }
 
-.imagen-int{
+.imagen-int img{
    display: flex;
    position: absolute;
-   width: 60%;
-   height: 58%;
+   width: 40%;
+   height: 48%;
    left: 2%;
-   top: 40%;
+   top: 42%;
 }
 
 .texto-int{
@@ -257,9 +277,8 @@ button:hover{
 
    color: #1D5484;
    font-style: normal;
-   font-weight: 100%;
-   font-size: 18px;
-   line-height: 150%;
+   font-size: 16px;
+   line-height: 5vh;
 }
 
 h3{
@@ -275,18 +294,19 @@ h4{
  /* ---Noticias de Ecologia ---------- */
 
 .ecologia{
-   background-color: white;
+
    position: absolute;
    width: 100%;
-   height: 500px;
+   height: 440px;
    left: 0px;
-   top: 212%;
+   top: 184%;
 }
 
 .titulo2 p{
    position: absolute;
    justify-content:space-between;
    text-align: left;
+   font-size: 28px;
    width: 250px;
    height: 100px;
    left: 2%;
@@ -298,7 +318,6 @@ h4{
    position: absolute;
    justify-content:space-between;
    text-align: left;
-
    width: 250px;
    height: 100px;
    left: 0px;
@@ -311,14 +330,14 @@ h4{
    top: 70px;
 }
 
-.imagen-eco{
+.imagen-eco img{
    display: flex;
    position: absolute;
-   width: 42%;
-   height: 42%;
+   width: 40%;
+   height: 48%;
    left: 2%;
-   top: 40%;
-   overflow: hidden;  /* esconde lo q esta fuera del contenedor */
+   top: 42%;
+   /*overflow: hidden;   esconde lo q esta fuera del contenedor */
 }
 
 .texto-eco{
@@ -330,12 +349,8 @@ h4{
 
    color: #1D5484;
    font-style: normal;
-   font-weight: 100%;
-   font-size: 18px;
-   line-height: 150%;
-
+   font-size: 14px;
 }
-
 
  /* --- Barra azul final--------------------- */
 a{
@@ -352,7 +367,7 @@ h5 {
    font-weight: 900;
    font-size: 24px;
    line-height: 32px;
-   /* identical to box height, or 133% */
+
    letter-spacing: 0.01em;
    text-transform: capitalize;
 /* Inside auto layout */
@@ -368,7 +383,7 @@ h5 {
   width: 100%;
   height: 320px;
   left: 0px;
-  top: 310%;
+  top: 280%;
  }
 
  .logotipo{  
@@ -564,8 +579,14 @@ nav .menu-Nol a:hover {
    display: flex;
    width: 100%;
    height: 49px;
+   justify-content: space-between;
+   margin: auto ;
    left: 0px;
-   top: 364%;
+   top: 335%;
+}
+
+.texto-footer{
+text-align: center;  
 }
 
 .texto-footer p{
@@ -600,6 +621,7 @@ nav .menu-Nol a:hover {
    top: 15px;
 }
 
+
 /*   Boton de retorno------------------*/
 
 .boton-retornar{
@@ -622,8 +644,9 @@ nav .menu-Nol a:hover {
 }
 
 
-
 /*   Display para Movil  --------------------------*/
+
+
 
 @media screen and (max-width:900px){
 
@@ -632,20 +655,53 @@ nav .menu-Nol a:hover {
      }
 
    .redes-soc{ 
-      padding-left: 100%;
-      gap: 10px;
+      left: 30%;
+      gap: 6px;
    }
-   
-  /*  .contenedor-logo-contactos{
-      top: 340%;
-     } */
-
-
 
    .menu{
-      left: 56.5%;
+      left: 57%;
       gap: 15px;
    }
+
+   button{
+      left: 87.3%;
+      top: 10px;
+   }
+
+   .imagen-aviso #img-travel img{ 
+      width: 150vh;
+      height: 92vh;
+   }
+
+   .imagen-aviso .texto{
+      font-size: 2.5rem;
+   }
+
+   .imagen-aviso .texto h1{
+      width: 50%;
+      position: absolute;
+      left: 2%;
+      top: 34%;
+    }
+
+
+   .imagen-int img{
+      display: flex;
+      position: absolute;
+      width: 40%;
+      height: 48%;
+      left: 2%;
+      top: 42%;
+   }
+   
+   .texto-int{
+      top: 40%;
+
+      font-size: 16px;
+      line-height: 5vh;
+   }
+
 
    .texto-logotipo{  
       left: 14%;
@@ -654,13 +710,19 @@ nav .menu-Nol a:hover {
    .texto-logo h6 {
       padding-left: 19%;
       padding-top: 1%;
-   
    }
 
+   .contenedor-logo-contactos{ 
+      top: 260%;
+     }
+   
    .contactos{
       left: 56.5%;
    }
    
+   .contenedor-footer{
+      top: 305%;
+   }
    .redes-sociales{ 
       margin-left: 75%;
       gap: 5px;
@@ -668,18 +730,23 @@ nav .menu-Nol a:hover {
    
 }
 
+
 @media screen and (max-width:800px){
 
    .redes-soc{ 
-      width: 500px;
-      padding-left: 70%;
-      gap: 6px;
+      padding-left: 0%;
+      gap: 1px;
    }
    
    .menu{
-      left: 51%;
+      left: 52%;
       gap: 15px;
    }   
+
+   button{
+      left: 79%;
+      top: 10px;
+   }
 
    p{
       color: #1D5484;
@@ -689,6 +756,7 @@ nav .menu-Nol a:hover {
       line-height: 88%;
    }
 
+
    #linea-div{
       height: 3px;
    }
@@ -696,24 +764,17 @@ nav .menu-Nol a:hover {
    .subtitulo p{
       top: 24px;
    }
-
-   .imagen-int{
-      width: 50%;
-      height: 48%;
-      top: 35%;
-   }
    
-   .texto-int{
-      width: 47%;
-      height: 45%;
-      left: 47%;
-      top: 35%;
-
-      font-weight: 50%;
-      font-size: 18px;
-      line-height: 120%;
+   .ecologia{
+      top: 180%;
    }
-   
+
+   .contenedor-logo-contactos{
+      height: 300px;
+      left: 0px;
+      top: 255%;
+     }
+
    .texto-logo h5 {
       padding-top: 15%;
    }
@@ -726,6 +787,9 @@ nav .menu-Nol a:hover {
       left: 50.5%;
    }
 
+   .contenedor-footer{
+      top: 295%;
+   }
    .redes-sociales{ 
       margin-left: 72%;
       gap: 5px;
@@ -737,46 +801,29 @@ nav .menu-Nol a:hover {
 
 
    .redes-soc{ 
-      width:100%;
-      padding-left: 40%;
-      gap: 6px;
+      padding-left: -1rem;
+      gap: 1px;
    }
    
    .menu{
-      left: 50%;
+      left: 46%;
       gap: 15px;
    }   
 
+
    button{
-      font-style: 1.18cm;
-      padding: 10px 15px;
+      left: 77%;
+      top: 11px;
    }
+
 
    .imagen-aviso .texto{
       font-size: 1.6rem;
    }
 
-   .imagen-aviso .img-vector{
-      width: 200%;
-      left: 56%;
-      top: 35%;
-    }
-
-   .imagen-int{
-      width: 40%;
-      height: 48%;
-      top: 35%;
-   }
-   
-   .texto-int{
-      width: 45%;
-      height: 40%;
-      left: 50%;
-      top: 35%;
-
-      font-weight: 100%;
-      font-size: 16px;
-      line-height: 110%;
+   .imagen-aviso #img-travel img{ 
+      width: 116.5vh;
+      height: 93vh;
    }
 
    .texto-eco{
@@ -789,6 +836,8 @@ nav .menu-Nol a:hover {
       line-height: 150%;
 
    }
+
+
 
    .texto-logo{
       left: 15%;
@@ -816,143 +865,213 @@ nav .menu-Nol a:hover {
 }
 
 @media screen and (max-width:600px){   /*-------600-*/
- 
-.barra-inicio{
-   height: 40px;
+
+.barra-inicio .fono{
+   display: none;
+}   
+
+.barra-inicio .mail{
+   display: none;
 }
 
-.barra-inicio a{
-   padding: 3% 6%;
+.barra-inicio .redes-soc{
+   display: none;
 }
 
-.barra-chica{
-      display: flex;
-      background: #1D5484;  
-      position: absolute;
-      width: 90%;
-      height: 56px;
-      left: 0px;
-      top: 0px;
+.logo-movil img{     /* ...Imagen logo movil...*/
+   position: absolute;
+   display: flex;
+
+   box-sizing: border-box;
+   left: 2%;
+   width: 5%;
+   top: 1%;
 }
 
-.redes-soc{ 
-  display: none;
+.text-movil{
+   position: absolute;
+   display: flex;
+   color: #ffffff;
+   width: 200px;
+   padding-left: 8%;
+   top: 0%;
+} 
+
+.text-movil h5{
+   font-style: normal;
+   font-size: 16px;
+   letter-spacing: 0,01em;
+   text-transform: capitalize;
+
+   text-align: left;
+   padding-top: 1%;
+} 
+
+.text-movil h6{
+   padding-left: 22%;
+   padding-top: 9%;
 }
 
-.boton-reg{
-   position: relative;
-   font-style: 1.25cm;
-   font-weight: bols;
-   padding: 10px 30px;
-   border-radius: 10px;
-   border: 1px solid rgba(0,0,0,0.5);
-   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-   color: white;
-   background-color: #487de1;
-   margin:center;
 
-   width: 30%;
-   height: 4px;
-   left: 40%;
-   top: 1.5px;
+.barra-menu .logo{
+   display:none ;
 }
 
-.boton-reg:hover{
-   background-color: rgba(86, 76, 197, 0.641);
-}
-
-   .barra-menu{  
-      height: 50px;
-      left: 0px;
-      top: 40px;
-   }   
-
-   .barra-menu .text-logo h5{
-      padding-left: 160%;
-      padding-top: 30%;
-   }  
-
-
+   .text-logo{
+      display:none ;
+   }
 
    .menu{
-      left: 63%;
-      top: 3px;
+      left: 2%;
       gap: 15px;
    }   
 
+   #boton-barra{
+      padding-left:34%;
+   }
+
    button{
-      display: none;
+      left:74%;
+      top: 10px;
    }
 
-   .imagen-aviso .img-vector{
-      display: none;
+   .imagen-aviso #img-travel img{ 
+      width: 116.5vh;
+      height: 84vh;
+   }
+
+   .imagen-aviso .texto h1{
+      top: 24%;
     }
-
-    .imagen-int{
-      width: 42%;
-      height: 42%;
-      top: 35%;
+   
+    .imagen-aviso  #img-travel .img-vector img{
+      top: 38%;
+    }
+   
+    .imagen-aviso  #img-travel .img-vector .vector-travel  img{
+ 
+      top: 38%;
    }
+    .internacional{
+      left: 0px;
+      top: 90%;
+   }
+   
 
+   .ecologia{
+      left: 0px;
+      top: 190%;
+   }
 
    .contenedor-logo-contactos{
       width: 100%;
       height: 320px;
       left: 0px;
-      top: 310%;
+      top: 268%;
      }
-    
+
+/*----------------nueva-barra movil--------*/
      .logotipo{  
+      display: flex;
        position: absolute;
        text-align: center;
-       width: 270px;
+       width: 300px;
        height: 270px;
-       left: 25%;
+       left: 35%;
        top: 0%;
     }
-    
+
     .logo2{
-       display: flex;
-       box-sizing: border-box;
-       position: absolute;
-       left: 3%;
-       right: 90.97%;
-       top: 10%;
-       bottom: 75%;
-    }
-    
-    .texto-logotipo{  
-       width: 178px;
-       height: 100px;
-       top: 0%;
-       left: 12%;
-       color: white;
-    }
-    
-    .texto-logo h5 {
-      padding-left: 10%;
-      padding-top: 19%;
+      display: flex;
+      left: 0%;
+      right: 90.97%;
+      top: 5%;
+      bottom: 81.5%;
    }
-    
-   .texto-logo .texto-logotipo h6 {
-      padding-top: 0%;
+   
+   .texto-logotipo{  
+
+         position: absolute;
+         display: flex;
+         color: #ffffff;
+         width: 250px;
+         left: 15%;
+         top: 3%;
    }
 
+   h5 {
+      padding-left: 0%;
+      padding-top: 6%;
+   }
+
+   .texto-logotipo h6 {
+      padding-left: 6px;
+      padding-top: 10%;
+   }
+
+/*-------------------------*/
    .contactos{
-      left: 20%;
-      top: 30% ;
+      left: 22%;
+      top: 20% ;
       gap: 60px;
    }
 
    .contenedor-footer{
       left: 0px;
-      top: 360%;
+      top: 305%;
    }
 
    .texto-footer p{
       text-align: center;
       display: inline-block;
-      margin-left: 15%;
+      margin-left: 25.5%;
+      margin-top: 3%;
+   }
+   
+   .redes-sociales{ 
+      margin-left: 35%;
+      margin-top: 5%;
+   }
+}
+
+@media screen and (max-width:500px){
+
+
+   #boton-barra{
+      padding-left:20%;
+   }
+
+   .imagen-int img{
+      top: 38%;
+   }
+   
+   .texto-int{
+      top: 38%;
+
+      font-size: 16px;
+      line-height: 5vh;
+   }
+
+   .ecologia{
+      top: 208%;
+   }
+
+   .contenedor-logo-contactos{
+      width: 100%;
+      height: 300px;
+      left: 0px;
+      top: 328%;
+     }
+
+     .contenedor-footer{
+      left: 0px;
+      top: 376%;
+   }
+
+   .texto-footer p{
+      text-align: center;
+      display: inline-block;
+      margin-left: 15.5%;
       margin-top: 3%;
    }
    
@@ -960,40 +1079,4 @@ nav .menu-Nol a:hover {
       margin-left: 30%;
       margin-top: 5%;
    }
-}
-
-@media screen and (max-width:500px){
-
-   .boton-reg{
-      width: 33%;
-      height: 60%;
-      top: 4px;
-   }
-
-   .barra-menu .text-logo h5{
-      padding-left: 113%;
-   }   
-
-   .menu{
-      left: 54%;
-      top: 3px;
-   }   
-
-   .imagen-int{
-      width: 30%;
-      height: 32%;
-      top: 35%;
-   }
-
-   .texto-eco{
-      width: 45%;
-      height: 40%;
-      left: 50%;
-      top: 40%;
-
-      font-size: 14px;
-      line-height: 150%;
-   }
-
-
 }
