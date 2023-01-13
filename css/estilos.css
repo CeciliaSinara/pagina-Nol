@@ -17,14 +17,13 @@ body{
    font-family:'open sans'; 
 }
 
- /*---Barra inicio Azul ---------------*/
-
-
 header{
    background: #1D5484;  
 }
 
-.barra-inicio{
+/*-------BARRA INICIO AZUL ---------------*/ 
+
+.container-1{
 
    display: grid;
    grid-template-columns: 1.3fr 1.3fr 4.2fr;
@@ -37,28 +36,19 @@ header{
    height: 33px;
 }
 
-#logo-movil img{     /* ...Imagen logo movil...*/
-   position: absolute;
-   display: flex;
-   box-sizing: border-box;
-   left: 2%;
-   width: 0.1%;
-   top: 1%;
-}
-
-.barra-inicio .fono { 
+.container-1 .fono { 
  
    display: flex;
    gap: 2px;
 }
 
-.barra-inicio .mail { 
+.container-1 .mail { 
 
    display: flex;
    gap: 2px;
 }
 
-.barra-inicio .redes-soc{ 
+.container-1 .redes-soc{ 
  
    display: flex;
    justify-content: space-between;
@@ -67,27 +57,31 @@ header{
    gap: 20px;
 }
 
-.barra-inicio a{
+.container-1 a{
 
    display: flex;
-   text-decoration: none;  /*---retiro el subrayado */
+   text-decoration: none;  /* retiro el subrayado */
    gap: 2px;
 }
  
-.barra-inicio a:hover {    
+.container-1 a:hover {    
 
    text-decoration: underline;
 }
-  /*-
-#logo-movil{
 
-   display: none;
+#logo-movil img{     /*  aseguro imagen logo movil */
+   position: absolute;
+   display: flex;
+   box-sizing: border-box;
+   left: 2%;
+   width: 0.1%;
+   top: 1%;
 }
-*/
 
-  /*---Barra secundaria Blanca -----------*/
 
-  .barra-menu{ 
+  /*----  BARRA SECUNDARIA BLANCA  -----------*/
+
+  .container-2{ 
 
    display: flex;
    background-color: #ffffff;
@@ -98,7 +92,7 @@ header{
    top: 33px;
 }
 
-.barra-menu .logo{
+.container-2 .logo{
 
    display: flex;
    box-sizing: border-box;
@@ -109,14 +103,11 @@ header{
    bottom: 20.24%;
 }
 
-.barra-menu .text-logo h5{
+.container-2 .text-logo h5{
 
    font-style: normal;
    font-size: 18px;
 
-   /* identical to
-    box height, or 133% */
-   
    letter-spacing: 0,01em;
    text-transform: capitalize;
    
@@ -173,7 +164,7 @@ button:hover{
 }
 
 
- /* ---Main -- Aviso publicitario ----------- */
+ /* ----  AVISO COMERCIAL  ----- main -------- */
 
 .imagen-aviso{
 
@@ -227,9 +218,10 @@ button:hover{
 }
 
 
- /* ---Noticias Internacionales ---------- */
+ /* --- NOTICIAS  ---------- */
 
-.internacional{
+
+ .internacional{
 
    position: absolute;
    width: 100%;
@@ -266,8 +258,8 @@ button:hover{
    justify-content:space-between;
    text-align: left;
    width: 30%;
-   left: 0px;
-   top: 28px;
+   left: 2%;
+   top: 79px;
 }
 
 .imagen-int img{
@@ -348,7 +340,7 @@ h4{
    height: 48%;
    left: 2%;
    top: 42%;
-   /*overflow: hidden;   esconde lo q esta fuera del contenedor */
+
 }
 
 .texto-eco{
@@ -363,7 +355,11 @@ h4{
    font-size: 14px;
 }
 
- /* --- Barra azul final--------------------- */
+
+
+
+ /* ---   BARRA AZUL FINAL  -------------------- */
+
 a{
    color: #FFFFFF; 
    text-decoration: none;
@@ -387,7 +383,7 @@ h5 {
    flex-grow: 0;   
 }
 
-.contenedor-logo-contactos{  /* --- Barra azul final---------*/
+.Contenedor3{     /* Barra azul final */
  
   background: #1D5484; 
   position: absolute;
@@ -446,9 +442,6 @@ h5 {
 }
 
 
-/* ----Contenedor de contactos footer------------ */
-
-
 .contactos{
    position: absolute;
    display: flex;
@@ -463,7 +456,7 @@ h5 {
    gap: 60px;
 }
 
-.contenedor1{
+.contact1{
 
    display: flex;
    flex-direction: column;
@@ -473,14 +466,13 @@ h5 {
    
    width: 105px;
    height: 152px;
-   /* Inside auto layout */
    
    flex: none;
    order: 0;
    flex-grow: 0;
 }
 
-.contenedor1 .texto-logo h5 {
+.contact1 .texto-logo h5 {
    padding-left: 0px;
    padding-top: 0px;
 }
@@ -495,7 +487,7 @@ h5 {
    font-weight: 400;
    font-size: 18px;
    line-height: 24px;
-   /* identical to box height, or 133% */
+   
    letter-spacing: 0.01em;
    color: #FFFFFF;
    /* Inside auto layout */
@@ -515,7 +507,7 @@ nav .menu-Nol a{
    font-weight: 400;
    font-size: 18px;
    line-height: 24px;
-   /* identical to box height, or 133% */
+   
    letter-spacing: 0.01em;
    text-decoration: none;
    /* Inside auto layout */
@@ -531,7 +523,7 @@ nav .menu-Nol a:hover {
    text-decoration: underline;
 }
 
-.contenedor2{
+.contact2{
 
    display: flex;
    flex-direction: column;
@@ -548,7 +540,7 @@ nav .menu-Nol a:hover {
    flex-grow: 0;
  }
 
-.contenedor2 .texto-logo h5{
+.contact2 .texto-logo h5{
    padding-left: 0px;
    padding-top: 0px;
 }
@@ -581,59 +573,59 @@ nav .menu-Nol a:hover {
 }
 
 
- /* --- Footer--------------------- */
+   /* ------  FOOTER  ------------------- */
 
-
-.contenedor-footer{
-   border-top: 2px solid #bfc2f5; 
+footer #linea-footer{
    position: absolute;
-   display: flex;
+   border-top: 2px solid #bfc2f5;    
    width: 100%;
-   height: 49px;
-   justify-content: space-between;
-   margin: auto ;
    left: 0px;
    top: 335%;
 }
 
-.texto-footer{
-text-align: center;  
+.contenedor-footer{
+
+   position: absolute;
+   display: grid;
+   grid-template-columns: 5fr 5fr;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-left: 2%;
+   margin-right: 2%;
+   height: 40px;
+   gap: 15%;
+   top: 337%;
 }
 
-.texto-footer p{
+.contenedor-footer .texto-footer p{
+
    display: flex;
-   width: 400px;
+   justify-content: space-between;
+   align-items: center;
    font-family: 'Lato';
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 20px;
-   margin-left: 5%;
-   margin-top: 15px;
+
    color:  white;
+   width: 600px;  
+
 }
 
-.redes-sociales{ 
-   width: 200px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   position: absolute;
-   justify-content:space-between;
-   gap: 40px;
+.contenedor-footer .redess-footer{ 
 
-   height: 24px;
-
-   /* Inside auto layout */
-   flex: none;
-   order: 1;
-   flex-grow: 0;
-   margin-left: 78.5%;
-   top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      left: 65%;
+      gap: 20px;
 }
 
 
-/*   Boton de retorno------------------*/
+/*   Boton de retor  */
+
 
 .boton-retornar{
    font-style: 1.25cm;
@@ -643,7 +635,6 @@ text-align: center;
    border: 1px solid #93a3ad;
  
    color: white;
- /* background-color: rgba(214, 182, 244, 0.946);*/
    background-color:  hsl(203, 40%, 78%);
    float: right;
 }
@@ -655,7 +646,7 @@ text-align: center;
 }
 
 
-/*   Display para Movil  --------------------------*/
+/* --- DISPLAY PARA MOVIL  --------------------------*/
 
 
 
@@ -723,22 +714,22 @@ text-align: center;
       padding-top: 1%;
    }
 
-   .contenedor-logo-contactos{ 
+   .Contenedor3{ 
       top: 260%;
      }
    
    .contactos{
       left: 56.5%;
    }
+
+   footer #linea-footer{
+      top: 327%;
+   }
    
    .contenedor-footer{
-      top: 305%;
-   }
-   .redes-sociales{ 
-      margin-left: 75%;
-      gap: 5px;
-   }
-   
+      gap: 15%;
+      top: 327%;
+   }   
 }
 
 
@@ -780,7 +771,7 @@ text-align: center;
       top: 180%;
    }
 
-   .contenedor-logo-contactos{
+   .Contenedor3{
       height: 300px;
       left: 0px;
       top: 255%;
@@ -797,16 +788,8 @@ text-align: center;
    .contactos{
       left: 50.5%;
    }
-
-   .contenedor-footer{
-      top: 295%;
-   }
-   .redes-sociales{ 
-      margin-left: 72%;
-      gap: 5px;
-   }
-
 }
+
 
 @media screen and (max-width:700px){
 
@@ -848,8 +831,6 @@ text-align: center;
 
    }
 
-
-
    .texto-logo{
       left: 15%;
    }
@@ -867,25 +848,20 @@ text-align: center;
       left: 48%;
       gap: 40px;
    }
-
-   .redes-sociales{ 
-      margin-left: 69%;
-      gap: 1px;
-   }
-
 }
+
 
 @media screen and (max-width:600px){   /*-------600-*/
 
-.barra-inicio .fono{
+.container-1 .fono{
    display: none;
 }   
 
-.barra-inicio .mail{
+.container-1 .mail{
    display: none;
 }
 
-.barra-inicio .redes-soc{
+.container-1 .redes-soc{
    display: none;
 }
 
@@ -927,7 +903,7 @@ text-align: center;
 }
 
 
-.barra-menu .logo{
+.container-2 .logo{
    display:none ;
 }
 
@@ -971,18 +947,18 @@ text-align: center;
       top: 90%;
    }
    
-
    .ecologia{
       left: 0px;
       top: 190%;
    }
 
-   .contenedor-logo-contactos{
+   .Contenedor3{
       width: 100%;
       height: 310px;
       left: 0px;
       top: 325%;
      }
+
 
 /*----------------nueva-barra movil--------*/
      .logotipo{  
@@ -1031,32 +1007,29 @@ text-align: center;
       gap: 60px;
    }
 
+   footer #linea-footer{
+      top: 390%;
+   }
+   
    .contenedor-footer{
+      gap: 8%;
+      top: 390%;
+   } 
 
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   justify-content: space-between;
-
-
-   color: #ffffff;
-      left: 0px;
-      top: 383%;
-   }
-
-   
-   .texto-footer p{
-      display: flex;
-      margin-left: 2%;
+   .contenedor-footer .texto-footer p{
+      width: 300px;  
    }
    
-   .redes-sociales{ 
-      max-width: 10px;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      margin-left: 75%;
-   }
+   .contenedor-footer .redess-footer{ 
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         left: 5%;
+         gap: 3px;
+   } 
 }
+
 
 @media screen and (max-width:500px){
 
@@ -1079,5 +1052,4 @@ text-align: center;
    .ecologia{
       top: 208%;
    }
-
 }
