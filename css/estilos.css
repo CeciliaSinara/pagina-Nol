@@ -77,6 +77,10 @@ header{
    width: 0.1%;
    top: 1%;
 }
+.barra-movil #text-movil h5{ 
+   position: absolute;
+   font-size: 1px;
+} 
 
 
   /*----  BARRA SECUNDARIA BLANCA  -----------*/
@@ -117,7 +121,7 @@ header{
    padding-top: 45%;
 }   
 
-.menu{
+.container-2 .menu{
 
    display: flex;
    color: #1D5484;
@@ -145,7 +149,7 @@ nav .menu a:hover {
    text-decoration: underline;
 }
 
-button{
+.container-2 button{
 
    font-style: 1.25cm;
    font-weight: bols;
@@ -158,7 +162,7 @@ button{
    margin:center;
 }
 
-button:hover{
+.container-2 button:hover{
 
    background-color: rgba(31, 86, 135, 0.807);
 }
@@ -169,15 +173,13 @@ button:hover{
 .imagen-aviso{
 
    width: 100%;
-   height: 300px;
    top: 60% ;
 }
-
 
 .imagen-aviso #img-travel img{ 
 
    width: 211vh;
-   height: 83vh;
+   height: 83.5vh;
 }
 
 .imagen-aviso .texto{
@@ -199,16 +201,16 @@ button:hover{
    top: 30%;
  }
 
- .imagen-aviso  #img-travel .img-vector img{
+.imagen-aviso  #img-travel .img-vector img{
 
    position: absolute;
    width: 34%;
    height: 50%;
    left: 60%;
-   top: 45%;
- }
+   top: 45%; 
+}
 
- .imagen-aviso  #img-travel .img-vector .vector-travel  img{
+.imagen-aviso  #img-travel .img-vector .vector-travel  img{
  
    position: absolute;
    width: 36%;
@@ -220,142 +222,184 @@ button:hover{
 
  /* --- NOTICIAS  ---------- */
 
-
- .internacional{
-
-   position: absolute;
-   width: 100%;
-   height: 440px;
-   left: 0px;
-   top: 102%;
-}
-
-.titulo p{
-   position: absolute;
-   justify-content:space-between;
-   text-align: left;
-   font-size: 28px;
-   width: 30%;
-   left: 2%;
-   top: 30px;
-}
-
-#linea-div{
-   position: absolute;
-   width: 95%;
-   height: 8px;
-   background: #1D5484;
-   left: 2%;
-   gap: 2;
-}
-
-.linea1{
-   top: 70px;
-}
-
-.subtitulo p{
-   position: absolute;
-   justify-content:space-between;
-   text-align: left;
-   width: 30%;
-   left: 2%;
-   top: 79px;
-}
-
-.imagen-int img{
-   display: flex;
-   position: absolute;
-   width: 40%;
-   height: 48%;
-   left: 2%;
-   top: 42%;
-}
-
-.texto-int{
-   position: absolute;
-   width: 47%;
-   height: 45%;
-   left: 50%;
-   top: 40%;
+ h3 h4{ 
 
    color: #1D5484;
    font-style: normal;
    font-size: 16px;
-   line-height: 5vh;
-}
-
-h3{
-   left: 0;
-   top: 0;
-}
-
-h4{
-   left: 0;
-   top: 15%;
-}
-
- /* ---Noticias de Ecologia ---------- */
-
-.ecologia{
+ }
+ 
+ 
+ .noticias{
 
    position: absolute;
-   width: 100%;
-   height: 440px;
-   left: 0px;
-   top: 184%;
+   display: flex;
+   flex-direction: column;
+   width: 96%;
+   height: 785px;
+   margin-left: 2%;
+   margin-right: 2%;
+   top: 102%;
+   gap:20px;
 }
 
-.titulo2 p{
+            /*   Internacional  */
+.noticias .encabezado-inter{  
+
+   position: absolute;
+   display: flex;
+   justify-content:space-between;
+   align-items: left;
+   width: 100%;
+   height: 117px;
+   top: 0px;
+}
+
+.noticias .titulo p{
    position: absolute;
    justify-content:space-between;
    text-align: left;
    font-size: 28px;
-   width: 250px;
-   height: 100px;
-   left: 2%;
-   top: 30px;
+   left: 0px;
+   top: 25%;
 }
 
+#linea-div{
+   position: absolute;
+   width: 100%;
+   height: 6px;
+   background: #1D5484;
+   left: 0px;
+   gap: 2;
+}
 
-.subtitulo2 p{
+.noticias .linea1{
+   top: 54%;
+}
+
+.noticias .subtitulo p{
    position: absolute;
    justify-content:space-between;
    text-align: left;
-   width: 250px;
-   height: 100px;
    left: 0px;
-   top: 30px;
+   top: 62%;
 }
 
+.noticias .report-inter{
 
-.linea2{
-   left: 80px;
-   top: 70px;
-}
-
-.imagen-eco img{
    display: flex;
-   position: absolute;
-   width: 40%;
-   height: 48%;
-   left: 2%;
-   top: 42%;
+   width: 100%;
+   height: 240px;
+   margin-top: 11%;
+} 
 
-}
+.report-inter .repor-img-int{ 
 
-.texto-eco{
-   position: absolute;
-   width: 47%;
-   height: 45%;
-   left: 50%;
-   top: 40%;
+   display: flex;
+   width: 50%;
+   padding-top: 3%;
+   gap: 20px;
+}  
+
+.report-inter .repor-img-int img{ 
+
+   display: flex;
+   width: 60%;
+   height: 68%;
+   overflow: hidden;
+} 
+
+.report-inter .report-text-int{ 
+
+   width: 50%;
+   color: #1D5484;
+   padding-top: 3%;
+} 
+
+.report-inter .report-text-int h3{ 
 
    color: #1D5484;
-   font-style: normal;
-   font-size: 14px;
+} 
+
+.report-inter .report-text-int h4{ 
+
+   color: #1D5484;
+} 
+
+
+              /*   Ecologia  */
+.noticias .encabezado-eco{
+
+   position: absolute;
+   display: flex;
+   justify-content:space-between;
+   align-items: left;
+   width: 100%;
+   height: 117px;
+   top: 41%;
 }
 
+.titulo-eco p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   font-size: 28px;
+   left: 0px;
+   top: 25%;
+}
 
+.linea2{
+   top: 50%;
+}
+
+.subtitulo-eco p{
+   position: absolute;
+   justify-content:space-between;
+   text-align: left;
+   left: 0px;
+   top: 60%;
+} 
+
+.noticias .report-eco{
+
+   display: flex;
+   width: 100%;
+   height: 200px;
+   margin-top: 5%;
+ } 
+
+.report-eco .repor-img-eco{ 
+
+   display: flex;
+   width: 50%;
+   padding-top: 0%;
+   gap: 20px;
+}
+
+.report-eco .repor-img-eco img{ 
+
+   display: flex;
+   width: 60%;
+   height: 68%;
+   overflow: hidden;
+} 
+ 
+.report-eco .report-text-eco{ 
+
+   width: 50%;
+   color: #1D5484;
+   padding-top: 0%;
+} 
+
+.report-eco .report-text-eco h3{ 
+
+   color: #1D5484;
+} 
+
+.report-eco .report-text-eco h4{ 
+
+   color: #1D5484;
+} 
 
 
  /* ---   BARRA AZUL FINAL  -------------------- */
@@ -376,11 +420,7 @@ h5 {
    line-height: 32px;
 
    letter-spacing: 0.01em;
-   text-transform: capitalize;
-/* Inside auto layout */
-   flex: none;
-   order: 0;
-   flex-grow: 0;   
+   text-transform: capitalize; 
 }
 
 .Contenedor3{     /* Barra azul final */
@@ -388,28 +428,42 @@ h5 {
   background: #1D5484; 
   position: absolute;
   width: 100%;
-  height: 320px;
+  height: 210px;
   left: 0px;
-  top: 280%;
+  top: 240%;
+}
+
+.contenedor4{
+
+   position: absolute;
+   display: flex;
+   width: 96%;
+   height: 180px;
+   margin-left: 2%;
+   margin-right: 2%;
+   top: 0%;
+
  }
 
- .logotipo{  
+ /*- - logo footer - -*/
+
+ .contenedor4 .contenedor-logotipo{  
 
    position: absolute;
    width: 50%;
-   height: 270px;
+   height: 180px;
    left: 0px;
    top: 0%;
 }
 
-.logo2{
+.logotipo{
    display: flex;
    box-sizing: border-box;
    position: absolute;
-   left: 3%;
-   right: 90.97%;
-   top: 30.34%;
-   bottom: 55.34%;
+   left: 0px;
+   right: 98%;
+   top: 38.34%;
+   bottom: 41.5%;
 }
 
 .texto-logotipo{  
@@ -417,17 +471,17 @@ h5 {
    position: absolute;
    width: 50%;
    height: 60px;
-   top: 20%;
-   left: 12%;
+   top: 22%;
+   left: 8%;
    color: white;
 }
 
-.texto-logo h5 {
+.text-logotipo h5 {
    padding-left: 0px;
    padding-top: 13%;
 }
 
-.texto-logo h6 {  /* noticiero Online */ 
+.text-logotipo h6 {  /* noticiero Online */ 
    font-style: normal;
    font-weight: 400;
    font-size: 15px;
@@ -440,23 +494,18 @@ h5 {
    padding-top: 1%;
 
 }
+ /*- - - - -*/
 
+.contenedor-contactos{
 
-.contactos{
    position: absolute;
    display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   padding: 0px;
-
-   width: 70%;
-   height: 152px;
-   left: 63%;
-   top: 20%;
+   left: 64.5%;
+   top: 10%;
    gap: 60px;
 }
 
-.contact1{
+.menu-contact1{
 
    display: flex;
    flex-direction: column;
@@ -472,7 +521,7 @@ h5 {
    flex-grow: 0;
 }
 
-.contact1 .texto-logo h5 {
+.menu-contact1 .texto-logo h5 {
    padding-left: 0px;
    padding-top: 0px;
 }
@@ -523,7 +572,7 @@ nav .menu-Nol a:hover {
    text-decoration: underline;
 }
 
-.contact2{
+.menu-contact2{
 
    display: flex;
    flex-direction: column;
@@ -533,14 +582,9 @@ nav .menu-Nol a:hover {
    
    width: 209px;
    height: 152px;
-   
-   /* Inside auto layout */
-   flex: none;
-   order: 1;
-   flex-grow: 0;
  }
 
-.contact2 .texto-logo h5{
+.menu-contact2 .texto-logo h5{
    padding-left: 0px;
    padding-top: 0px;
 }
@@ -580,7 +624,7 @@ footer #linea-footer{
    border-top: 2px solid #bfc2f5;    
    width: 100%;
    left: 0px;
-   top: 335%;
+   top: 276%;
 }
 
 .contenedor-footer{
@@ -593,9 +637,9 @@ footer #linea-footer{
 
    margin-left: 2%;
    margin-right: 2%;
-   height: 40px;
+   height: 20px;
    gap: 15%;
-   top: 337%;
+   top: 277%;
 }
 
 .contenedor-footer .texto-footer p{
@@ -619,15 +663,15 @@ footer #linea-footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      left: 65%;
-      gap: 20px;
+      padding-left: 1%;
+      gap: 30px;
 }
 
 
 /*   Boton de retor  */
 
-
 .boton-retornar{
+
    font-style: 1.25cm;
    font-weight:bolder;
 
@@ -637,6 +681,10 @@ footer #linea-footer{
    color: white;
    background-color:  hsl(203, 40%, 78%);
    float: right;
+   justify-items: end;
+   margin-left: 100%;
+   width: 15px;
+   height: 18px;
 }
  
 .boton-retornar:hover{
@@ -656,23 +704,23 @@ footer #linea-footer{
       display: none;
      }
 
-   .redes-soc{ 
+   .container-2 .redes-soc{ 
       left: 30%;
       gap: 6px;
    }
 
-   .menu{
+   .container-2 .menu{
       left: 57%;
       gap: 15px;
    }
 
-   button{
-      left: 87.3%;
+   .container-2 button{
+      left: 90.3%;
       top: 10px;
    }
 
    .imagen-aviso #img-travel img{ 
-      width: 150vh;
+      width: 180vh;
       height: 92vh;
    }
 
@@ -686,24 +734,14 @@ footer #linea-footer{
       left: 2%;
       top: 34%;
     }
-
-
-   .imagen-int img{
-      display: flex;
-      position: absolute;
-      width: 40%;
-      height: 48%;
-      left: 2%;
-      top: 42%;
-   }
-   
-   .texto-int{
-      top: 40%;
-
-      font-size: 16px;
-      line-height: 5vh;
+              /*   Ecologia  */
+   .noticias .encabezado-eco{
+      top: 38%;
    }
 
+   .noticias .report-eco{
+      margin-top: 10%;
+   } 
 
    .texto-logotipo{  
       left: 14%;
@@ -715,143 +753,28 @@ footer #linea-footer{
    }
 
    .Contenedor3{ 
-      top: 260%;
+      top: 230%;
      }
    
-   .contactos{
+   .contenedor-contactos{
       left: 56.5%;
    }
 
    footer #linea-footer{
-      top: 327%;
+      top: 265%;
    }
    
    .contenedor-footer{
-      gap: 15%;
-      top: 327%;
-   }   
-}
-
-
-@media screen and (max-width:800px){
-
-   .redes-soc{ 
-      padding-left: 0%;
-      gap: 1px;
-   }
-   
-   .menu{
-      left: 52%;
-      gap: 15px;
+      top: 266%;
    }   
 
-   button{
-      left: 79%;
-      top: 10px;
-   }
+   .contenedor-footer .redess-footer{ 
 
-   p{
-      color: #1D5484;
-      font-style: normal;
-      font-weight: 50%;
-      font-size: 30px;
-      line-height: 88%;
-   }
-
-
-   #linea-div{
-      height: 3px;
-   }
-
-   .subtitulo p{
-      top: 24px;
-   }
-   
-   .ecologia{
-      top: 180%;
-   }
-
-   .Contenedor3{
-      height: 300px;
-      left: 0px;
-      top: 255%;
-     }
-
-   .texto-logo h5 {
-      padding-top: 15%;
-   }
-
-   .texto-logo h6 {
-      padding-left: 22%;
-   }
-
-   .contactos{
-      left: 50.5%;
+      padding: left 0%;
    }
 }
 
-
-@media screen and (max-width:700px){
-
-
-   .redes-soc{ 
-      padding-left: -1rem;
-      gap: 1px;
-   }
-   
-   .menu{
-      left: 46%;
-      gap: 15px;
-   }   
-
-
-   button{
-      left: 77%;
-      top: 11px;
-   }
-
-
-   .imagen-aviso .texto{
-      font-size: 1.6rem;
-   }
-
-   .imagen-aviso #img-travel img{ 
-      width: 116.5vh;
-      height: 93vh;
-   }
-
-   .texto-eco{
-      width: 45%;
-      height: 40%;
-      left: 50%;
-      top: 40%;
-
-      font-size: 16px;
-      line-height: 150%;
-
-   }
-
-   .texto-logo{
-      left: 15%;
-   }
-
-   .texto-logo h5 {
-      padding-top: 19.5%;
-   }
-
-   .texto-logo h6 {
-      padding-left: 25%;
-      padding-top: 1.5%;
-   }
-
-   .contactos{
-      left: 48%;
-      gap: 40px;
-   }
-}
-
-
-@media screen and (max-width:600px){   /*-------600-*/
+@media screen and (max-width:600px){
 
 .container-1 .fono{
    display: none;
@@ -865,8 +788,7 @@ footer #linea-footer{
    display: none;
 }
 
-
-#logo-movil img{    
+.barra-movil #logo-movil img{    
 
    position: absolute;
    display: flex;
@@ -876,7 +798,7 @@ footer #linea-footer{
    top: 1.5%;
 }  
 
-#text-movil{
+.barra-movil #text-movil{
    position: absolute;
    display: flex;
    justify-content: space-between;
@@ -887,137 +809,193 @@ footer #linea-footer{
    top: 0%;
 } 
 
-#text-movil h5{
+.barra-movil #text-movil h5{
    font-style: normal;
    font-size: 16px;
    letter-spacing: 0,01em;
    text-transform: capitalize;
 
    text-align: left;
-   padding-top: 1%;
+   font-size: 16px;
+   padding-top: 8.7%;
 } 
 
 #text-movil h6{
    padding-left: 18%;
-   padding-top: 9%;
+   font-size: 10px;
+   padding-top: 2.5%;
 }
 
+.container-2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
 
 .container-2 .logo{
    display:none ;
 }
 
-   .text-logo{
-      display:none ;
+.text-logo{
+   display:none ;
+}
+
+.container-2 .menu{
+   left: 2%;
+   gap: 15px;
+}   
+
+.container-2 #boton-barra{
+   padding-left:20%;
+}
+
+button{
+   left:74%;
+   top: 10px;
+}
+
+
+.imagen-aviso #img-travel img{ 
+      width: 122.5vh;
+      height: 88vh;
    }
 
-   .menu{
-      left: 2%;
-      gap: 15px;
-   }   
-
-   #boton-barra{
-      padding-left:34%;
-   }
-
-   button{
-      left:74%;
-      top: 10px;
-   }
-
-   .imagen-aviso #img-travel img{ 
-      width: 116.5vh;
-      height: 84vh;
-   }
-
-   .imagen-aviso .texto h1{
-      top: 24%;
+   .imagen-aviso #img-travel .texto h1{
+      top: 28%;
     }
    
     .imagen-aviso  #img-travel .img-vector img{
-      top: 38%;
+      top: 42%;
     }
    
     .imagen-aviso  #img-travel .img-vector .vector-travel  img{
- 
+      top: 42%;
+   }
+
+   .imagen-aviso .texto{
+      font-size: 1.5rem;
+   }
+
+   .imagen-aviso .texto h1{
+      width: 70%;
+      position: absolute;
+      left: 2%;
       top: 38%;
-   }
-    .internacional{
-      left: 0px;
-      top: 90%;
-   }
-   
-   .ecologia{
-      left: 0px;
-      top: 190%;
-   }
-
-   .Contenedor3{
-      width: 100%;
-      height: 310px;
-      left: 0px;
-      top: 325%;
-     }
-
-
-/*----------------nueva-barra movil--------*/
-     .logotipo{  
-      display: flex;
-       position: absolute;
-       text-align: center;
-       width: 300px;
-       height: 270px;
-       left: 2%;
-       top: 4%;
     }
 
-    .logo2{
-      display: flex;
-      left: 0%;
-      right: 90.97%;
+    .noticias{
+      top: 85%;
+      gap:20px;
+   }
+
+   #linea-div{
+      height: 3px;
+      gap: 1px;
+   }
+
+   .noticias .encabezado-inter{
       top: 5%;
-      bottom: 81.5%;
+   } 
+
+.noticias .titulo p{
+   font-size: 24px;
+   top: 25%;
+}   
+
+.noticias .subtitulo p{
+   font-size: 24px;
+   top: 60%;
+}
+
+.noticias .report-inter{
+   height: 260px;
+   margin-top: 30%;
+} 
+
+.report-inter .repor-img-int img{ 
+   display: flex;
+   width: 60%;
+   height: 64%;
+   padding-top: 0px;
+ } 
+
+.report-inter .report-text-int h3{ 
+   font-size: 14px;
+   color:#1D5484 ;
+}  
+
+ .report-inter .report-text-int h4{ 
+   font-size: 14px;
+   color:#1D5484 ;
+} 
+
+              /*   Ecologia  */
+   .noticias .encabezado-eco{
+      top: 50%;
+   }   
+
+   .noticias .titulo-eco p{
+      font-size: 24px;
+   }   
+   
+   .noticias .subtitulo-eco p{
+      font-size: 24px;
    }
    
-   .texto-logotipo{  
+   .noticias .report-eco{
+      height: 170px;
+      margin-top: 20%;
+   } 
 
-         position: absolute;
-         display: flex;
-         color: #ffffff;
-         width: 250px;
-         left: 15%;
-         top: 3%;
+   .report-eco .repor-img-eco img{ 
+      width: 60%;
+      height: 64%;
+      top: 0px;
+    }  
+
+    .report-eco .report-text-eco h3{ 
+      font-size: 14px;   
+      color:#1D5484 ;
+    }  
+   
+    .report-eco .report-text-eco h4{ 
+      font-size: 14px;  
+      color:#1D5484 ;
+    } 
+
+   
+    /*- - logo footer - -*/
+    .Contenedor3{ 
+      top: 272%;
+     }
+   
+    .contenedor4 .contenedor-logotipo{  
+      display: none;
    }
 
-   h5 {
-
-      padding-left: 0%;
-      padding-top: 6%;
-   }
-
-   .texto-logotipo h6 {
-      padding-left: 6px;
-      padding-top: 10%;
-   }
-
-/*-------------------------*/
-   .contactos{
-      left: 2%;
-      top: 30% ;
-      gap: 60px;
+   .contenedor-contactos{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      left: 12%;
+      top: 10%;
+      gap: 40px;
    }
 
    footer #linea-footer{
-      top: 390%;
+      top: 318%;
    }
-   
+
    .contenedor-footer{
       gap: 8%;
-      top: 390%;
+      top: 320%;
    } 
 
    .contenedor-footer .texto-footer p{
-      width: 300px;  
+      width: 350px;  
    }
    
    .contenedor-footer .redess-footer{ 
@@ -1033,23 +1011,7 @@ footer #linea-footer{
 
 @media screen and (max-width:500px){
 
-
    #boton-barra{
       padding-left:20%;
-   }
-
-   .imagen-int img{
-      top: 38%;
-   }
-   
-   .texto-int{
-      top: 38%;
-
-      font-size: 16px;
-      line-height: 5vh;
-   }
-
-   .ecologia{
-      top: 208%;
    }
 }
